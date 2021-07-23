@@ -1,0 +1,87 @@
+@import 'animations.css';
+/** Main style settings **/
+@import 'settings-main.css';
+/** Font styles **/
+@import 'settings-font.css';
+/** Other settings **/
+@import 'settings-other.css';
+
+div.logo {
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+}
+img.logo {
+  position: relative;
+  left: -8px;
+  background-size: contain;
+  animation: animowane_logo 800ms infinite, animowane_logo2 1s infinite alternate;
+}
+
+.main {
+  width: 95%;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tales {
+  max-width: 700px;
+  min-height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.server-tale {
+  width: 300px;
+  min-height: 600px;
+  background: #ccc;
+}
+.server-1 {
+  background-image: url('/powitalna_pol/assets/images/server-1.jpg');
+  cursor: pointer;
+  transition: .5s background-image;
+  will-change: background-image;
+}
+.server-2 {
+  background-image: url('/powitalna_pol/assets/images/server-2.jpg');
+  cursor: pointer;
+  transition: .5s background-image;
+  will-change: background-image;
+}
+.server-1:hover {
+  background-image: url('/powitalna_pol/assets/images/server-1-active.jpg');
+}
+.server-2:hover {
+  background-image: url('/powitalna_pol/assets/images/server-2-active.jpg');
+}
+
+.margin-top-170 {
+  margin-top: 170px;
+}
+.background-text-06 {
+  background: rgba(30, 30, 30, 0.6);
+}
+.background-text-08 {
+  background: rgba(30, 30, 30, 0.8);
+}
+
+.main-text {
+  color: #fff;
+  font-size: 7em;
+  display: flex;
+  justify-content: center;
+  opacity: .5;
+}
+.secondary-text {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  opacity: .7;
+}

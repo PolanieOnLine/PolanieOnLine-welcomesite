@@ -1,0 +1,8 @@
+@keyframes animowane_logo{
+  0% {transform: translateY(0px)}
+  100% {transform: translateY(45px)}
+}
+@keyframes animowane_logo2{
+  0% {transform: translateY(45px)}
+  100% {transform: translateY(0px)}
+}
