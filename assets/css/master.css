@@ -44,22 +44,22 @@ img.logo {
   background: #ccc;
 }
 .server-1 {
-  background-image: url('assets/images/server-1.jpg');
+  background-image: url('/assets/images/server-1.jpg');
   cursor: pointer;
   transition: .5s background-image;
   will-change: background-image;
 }
 .server-2 {
-  background-image: url('assets/images/server-2.jpg');
+  background-image: url('/assets/images/server-2.jpg');
   cursor: pointer;
   transition: .5s background-image;
   will-change: background-image;
 }
 .server-1:hover {
-  background-image: url('assets/images/server-1-active.jpg');
+  background-image: url('/assets/images/server-1-active.jpg');
 }
 .server-2:hover {
-  background-image: url('assets/images/server-2-active.jpg');
+  background-image: url('/assets/images/server-2-active.jpg');
 }
 
 .margin-top-170 {
