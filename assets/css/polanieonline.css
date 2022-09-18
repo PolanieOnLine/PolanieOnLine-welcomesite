@@ -1,0 +1,289 @@
+/** Animate.style **/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+@font-face {
+  font-family: "PolskaOnLine";
+  src: url("/assets/fonts/polskaonline.ttf");
+  src: local("PolskaOnLine"), local("PolskaOnLine"), url("/assets/fonts/polskaonline.ttf") format("opentype");
+}
+:root {
+  --main-color: #22a2b1;
+  --bg-color: #292e38;
+  --bg-color-opacity: #292e38ab;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #181C23;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.logo-box {
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-box .logo {
+  width: 620px;
+  margin-bottom: 50px;
+  -webkit-animation: logo 800ms infinite, logo2 1s infinite alternate;
+          animation: logo 800ms infinite, logo2 1s infinite alternate;
+}
+.logo-box .logo img {
+  width: 100%;
+  background-size: cover;
+  -webkit-animation: backInDown 1.2s backwards;
+          animation: backInDown 1.2s backwards;
+}
+
+.nk-feature-2 {
+  transition: all 0.375s;
+}
+
+.nk-image-slider {
+  border-color: var(--main-color);
+}
+
+.nk-copyright-left a {
+  color: var(--main-color);
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.feature > * {
+  flex: 1 1 50%;
+}
+.feature .box {
+  padding: 5px;
+  transition: all 0.375s;
+}
+.feature .box:nth-child(1) {
+  -webkit-animation: backInLeft 2.5s backwards;
+          animation: backInLeft 2.5s backwards;
+}
+.feature .box:nth-child(2) {
+  -webkit-animation: backInRight 2.5s backwards;
+          animation: backInRight 2.5s backwards;
+}
+.feature .box:hover {
+  scale: 1.02;
+}
+.feature .box:hover .nk-feature-2 {
+  background-color: var(--bg-color);
+}
+.feature button {
+  height: 80px;
+  color: #ddd;
+  font-family: "PolskaOnLine";
+  font-size: 24px;
+  background-color: var(--bg-color-opacity);
+  border: 1px solid #333946;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: 0.5s;
+  -webkit-animation: backInUp 2.5s backwards;
+          animation: backInUp 2.5s backwards;
+}
+.feature button:hover {
+  color: var(--main-color);
+  background-color: var(--bg-color);
+  scale: 1.02;
+}
+.feature button .arrow {
+  -webkit-animation: arrow 800ms infinite, arrow2 1.4s infinite alternate;
+          animation: arrow 800ms infinite, arrow2 1.4s infinite alternate;
+}
+
+.intro {
+  background: var(--bg-color-opacity);
+  text-align: center;
+  font-family: "PolskaOnLine";
+}
+.intro p:hover {
+  color: rgba(40, 185, 201, 0.8);
+}
+.intro p:nth-child(6) {
+  margin: 0;
+}
+
+.tales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: "PolskaOnLine";
+}
+.tales .tale {
+  width: 300px;
+  height: 600px;
+  cursor: pointer;
+  transition: 0.5s background-image;
+  will-change: background-image;
+  border-radius: 6px;
+  background-size: cover;
+}
+.tales .tale .server-no-1,
+.tales .tale .server-no-2 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tales .tale .server-no-1::before,
+.tales .tale .server-no-2::before {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 170px;
+  background: rgba(30, 30, 30, 0.6);
+  -webkit-animation: fadeInUpBig 1.6s backwards;
+          animation: fadeInUpBig 1.6s backwards;
+}
+.tales .tale .server-no-1::after,
+.tales .tale .server-no-2::after {
+  content: "";
+  position: absolute;
+  color: #fff;
+  font-size: 7em;
+  opacity: 0.5;
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+.tales .tale .server-no-1:hover::after,
+.tales .tale .server-no-2:hover::after {
+  -webkit-animation: rubberBand 1s;
+          animation: rubberBand 1s;
+}
+.tales .tale .server-no-1::after {
+  content: "S1";
+}
+.tales .tale .server-no-2::after {
+  content: "S2";
+}
+.tales .server-1::before,
+.tales .server-2::before {
+  content: "";
+  display: flex;
+  justify-content: center;
+  color: #ddd;
+  opacity: 0.7;
+  height: 30px;
+  padding-top: 4px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background: rgba(30, 30, 30, 0.6);
+  -webkit-animation: fadeInDown 2s forwards;
+          animation: fadeInDown 2s forwards;
+}
+.tales .server-1 {
+  background-image: url("/assets/images/server-1.jpg");
+}
+.tales .server-1::before {
+  content: "Adres: s1.polanieonline.eu";
+}
+.tales .server-1:hover {
+  background-image: url("/assets/images/server-1-active.jpg");
+}
+.tales .server-2 {
+  background-image: url("/assets/images/server-2.jpg");
+}
+.tales .server-2::before {
+  content: "Adres: s2.polanieonline.eu";
+}
+.tales .server-2:hover {
+  background-image: url("/assets/images/server-2-active.jpg");
+}
+
+.scaleDown {
+  transition: 0.8s;
+  scale: 0.85;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(45px);
+  }
+}
+
+@keyframes logo {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(45px);
+  }
+}
+@-webkit-keyframes logo2 {
+  0% {
+    transform: translateY(45px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes logo2 {
+  0% {
+    transform: translateY(45px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes arrow {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+@keyframes arrow {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+@-webkit-keyframes arrow2 {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes arrow2 {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}/*# sourceMappingURL=polanieonline.css.map */
