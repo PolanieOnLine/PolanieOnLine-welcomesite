@@ -220,3 +220,8 @@ a:hover { text-decoration: none; }
     70% { box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.05); }
     100% { box-shadow: 0 0 0 25px rgba(255, 255, 255, 0); }
 }
+
+@media screen and (max-width: 768px) {
+    .feature > * { flex: 1 1 100%; }
+    .tales .tale { height: 300px; margin-bottom: 10px; }
+}
