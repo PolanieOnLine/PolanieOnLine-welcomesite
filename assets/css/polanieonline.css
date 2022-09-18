@@ -68,6 +68,10 @@ a:hover {
   color: var(--main-color);
 }
 
+.nk-main {
+  padding-bottom: 50px;
+}
+
 .feature {
   display: flex;
   justify-content: center;
@@ -105,8 +109,8 @@ a:hover {
   border-radius: 5px;
   margin-top: 30px;
   transition: 0.5s;
-  -webkit-animation: backInUp 2.5s backwards;
-          animation: backInUp 2.5s backwards;
+  -webkit-animation: backInUp 2.5s backwards, shadowPulse 2s 2.5s ease-out infinite;
+          animation: backInUp 2.5s backwards, shadowPulse 2s 2.5s ease-out infinite;
 }
 .feature button:hover {
   color: var(--main-color);
@@ -140,7 +144,7 @@ a:hover {
   width: 300px;
   height: 600px;
   cursor: pointer;
-  transition: 0.5s background-image;
+  transition: all 0.5s;
   will-change: background-image;
   border-radius: 6px;
   background-size: cover;
@@ -206,6 +210,7 @@ a:hover {
 }
 .tales .server-1:hover {
   background-image: url("/assets/images/server-1-active.jpg");
+  scale: 1.02;
 }
 .tales .server-2 {
   background-image: url("/assets/images/server-2.jpg");
@@ -215,6 +220,7 @@ a:hover {
 }
 .tales .server-2:hover {
   background-image: url("/assets/images/server-2-active.jpg");
+  scale: 1.02;
 }
 
 .scaleDown {
@@ -285,5 +291,27 @@ a:hover {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+@-webkit-keyframes shadowPulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.1);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.05);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(255, 255, 255, 0);
+  }
+}
+@keyframes shadowPulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.1);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.05);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(255, 255, 255, 0);
   }
 }/*# sourceMappingURL=polanieonline.css.map */
