@@ -36,6 +36,7 @@ a:hover { text-decoration: none; }
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .6s ease-out;
 
     .logo {
         width: 620px;
@@ -68,8 +69,8 @@ a:hover { text-decoration: none; }
         // flex-basis: 100%;
         transition: all .375s;
 
-        &:nth-child(1) { animation: backInLeft 2.5s backwards; }
-        &:nth-child(2) { animation: backInRight 2.5s backwards; }
+        &:nth-child(1) { animation: backInLeft 2s backwards; }
+        &:nth-child(2) { animation: backInRight 2s backwards; }
 
         &:hover {
             .nk-feature-2 { background-color: var(--bg-color); }
@@ -83,6 +84,7 @@ a:hover { text-decoration: none; }
         font-family: 'PolskaOnLine';
         font-size: 24px;
         background-color: var(--bg-color-opacity);
+        backdrop-filter: blur(2px);
         border: 1px solid #333946;
         border-radius: 5px;
         margin-top: 30px;
@@ -102,6 +104,7 @@ a:hover { text-decoration: none; }
 
 .intro {
     background: var(--bg-color-opacity);
+    backdrop-filter: blur(2px);
     text-align: center;
     font-family: 'PolskaOnLine';
 

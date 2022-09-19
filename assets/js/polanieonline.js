@@ -1,11 +1,13 @@
 var btn = $('.unique-btn');
 
 let main = $('.nk-main');
+let logo = $('.logo-box');
 let feature = $('.feature');
 let tales = $('.tales');
 
 btn.on('click', function(e) {
     main.addClass('scaleDown');
+    logo.addClass('scaleDown');
     e.stopPropagation();
 
     setTimeout(function() {
@@ -19,6 +21,7 @@ btn.on('click', function(e) {
             feature.removeClass('position-absolute animate__animated animate__fadeOutRight');
             //tales.removeClass('animate__animated animate__backInUp');
             main.removeClass('scaleDown');
+            logo.removeClass('scaleDown');
         }, 800);
     }, 1000);
 });
