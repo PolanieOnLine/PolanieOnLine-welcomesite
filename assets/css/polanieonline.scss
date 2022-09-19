@@ -32,7 +32,7 @@ footer { margin-top: auto; }
 a:hover { text-decoration: none; }
 
 .logo-box {
-    height: 170px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,7 +53,7 @@ a:hover { text-decoration: none; }
 .nk-feature-2 { transition: all .375s; }
 .nk-image-slider { border-color: var(--main-color); }
 .nk-copyright-left a { color: var(--main-color); }
-.nk-main { padding-bottom: 50px; }
+.nk-main { padding: 20px 0 50px 0; }
 
 .feature {
     display: flex;
@@ -124,6 +124,10 @@ a:hover { text-decoration: none; }
         will-change: background-image;
         border-radius: 6px;
         background-size: cover;
+        box-shadow: 0 0 8px #ccc;
+        transition: all 1s;
+
+        &:hover { box-shadow: 0 0 18px #ccc; }
 
         .server-no-1,
         .server-no-2 {
