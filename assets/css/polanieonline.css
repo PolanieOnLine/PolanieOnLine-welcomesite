@@ -95,7 +95,7 @@ a:hover {
           animation: backInRight 2s backwards;
 }
 .feature .box:hover {
-  scale: 1.02;
+  scale: 1.0075;
 }
 .feature .box:hover .nk-feature-2 {
   background-color: var(--bg-color);
@@ -131,6 +131,9 @@ a:hover {
           backdrop-filter: blur(2px);
   text-align: center;
   font-family: "PolskaOnLine";
+}
+.intro p {
+  transition: 0.5s;
 }
 .intro p:hover {
   color: rgba(40, 185, 201, 0.8);

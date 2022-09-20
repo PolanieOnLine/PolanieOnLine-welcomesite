@@ -74,7 +74,7 @@ a:hover { text-decoration: none; }
 
         &:hover {
             .nk-feature-2 { background-color: var(--bg-color); }
-            scale: 1.02;
+            scale: 1.0075;
         }
     }
 
@@ -108,8 +108,7 @@ a:hover { text-decoration: none; }
     text-align: center;
     font-family: 'PolskaOnLine';
 
-    p:hover { color: #28b9c9cc; }
-
+    p { transition: .5s; &:hover { color: #28b9c9cc; } }
     p:nth-child(6) { margin: 0; }
 }
 
